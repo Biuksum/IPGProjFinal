@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.util.Base64;
 import android.view.View;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.ipgprojfinal.adapters.ChatAdapter;
 import com.example.ipgprojfinal.databinding.ActivityChatBinding;
 import com.example.ipgprojfinal.models.ChatMessage;
@@ -30,7 +28,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
-public class ChatActivity extends AppCompatActivity {
+public class ChatActivity extends BaseActivity {
     private ActivityChatBinding binding;
     private User receiverUser;
     private List<ChatMessage> chatMessages;
@@ -38,6 +36,7 @@ public class ChatActivity extends AppCompatActivity {
     private PreferenceManager preferenceManager;
     FirebaseFirestore database;
     private String conversionId = null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

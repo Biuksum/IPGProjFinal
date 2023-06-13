@@ -17,6 +17,15 @@
         android:orientation="vertical"
         >
 
+        <ImageView
+            android:id="@+id/imgBackgroundLogo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:background="@color/mycolor10"
+            android:src="@drawable/logo_ok"
+            />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -131,7 +140,6 @@
                 android:text="@string/sign_up"
                 android:textColor="@color/white"
                 android:textSize="18dp"
-                android:background="@color/primary"
                 android:textStyle="bold"
                 app:cornerRadius="20dp"
                 />
